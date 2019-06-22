@@ -1,9 +1,31 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import AboutMe from "./pages/AboutMe";
+import Navbar from "./components/navbar";
+import Contact from './pages/Contact';
+
 
 function App() {
   return (
-    "Hey"
-  );
+    <Router>
+      <div>
+      <Navbar />
+      <Switch>
+        <Route exact path = "/" component = {Home} />
+        <Route exact path = "/home" component = {Home} />
+        <Route exact path = "/AboutMe" component = {AboutMe} />
+        <Route exact path = "/Projects" component = {Projects} />
+        <Route exact path = "/Contact" component = {Contact} />
+        
+        <Route render = {() => <h2>404 page!</h2>} />
+      </Switch>
+
+     </div>
+  </Router>
+
+  )
 }
 
 export default App;
