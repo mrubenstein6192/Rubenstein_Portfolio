@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import cardData from "../projectPics.json";
 
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 
-import Col from "../components/Col";
-import Row from "../components/Row";
+// import Col from "../components/Col";
+// import Row from "../components/Row";
 
 class Projects extends Component {
   state = {
@@ -14,16 +14,18 @@ class Projects extends Component {
   render () {
   return (
     <React.Fragment>
+      
        <div className = "jumbotron jumbotron-fluid text-center"
          style = {{
-          backgroundImage: 'url()',
+          backgroundImage: 'url(https://png.pngtree.com/thumb_back/fh260/back_pic/00/12/49/46563df08860442.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           height: '200px'
         }}><h1
         style = {{
-          color: "white",
-          fontWeight: "bold"
+          color: "maroon",
+          fontWeight: "bold",
+          fontSize: "50px"
         }}>My Projects</h1>
         </div>
 
@@ -32,18 +34,24 @@ class Projects extends Component {
             {/* print out cards here */}
             {this.state.cardData.map(card => {
               return (
-                <div className="col-12 col-sm-3 col-md-2" key={card.id}>
+                <div className="col-6 col-sm-4 col-md-3" key={card.id}>
+                   <h5 
+                   style = {{
+                     textAlign: "center"
+                   }}>{card.name}</h5>
+                   <a href = {card.link}
+                   target = "_blank"> 
                   <img
                     src={card.image}
                     alt={card.name}
-                    href = {card.link}
-                    className="img-fluid img-thumbnail rounded"
+                    className="img-fluid img-thumbnail rounded mb-4"
                     style = {{
-                      height: "100px",
+                      height: "150px",
                       width: "100%"
                     }}
                   />
-                  {card.name}
+              </a>
+                 
                 </div>
               );
             })}

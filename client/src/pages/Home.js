@@ -28,10 +28,7 @@ function Home() {
         <div className="row">
           <div className="col-12 col-md-8">
             <h2 className="display-4 my-2">Our Mission</h2>
-            <p>Designed for all levels of hikers!</p>
-            <p>Research hikes you would like to do in the future!</p>
-            <p>Keep track of all of your hikes as you complete them!</p>
-            <p>Look back with pride on all of the great experiences you've had!</p>
+           
           </div>
           
         <div className = "col-12 col-md-4">

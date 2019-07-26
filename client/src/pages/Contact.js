@@ -1,30 +1,47 @@
 import React, { Component } from 'react';
-
-import { Link } from 'react-router-dom';
-
-
-import Col from "../components/Col";
-import Row from "../components/Row";
+import Field from '../components/Field';
+import Button from '../components/Button';
 
 class Contacts extends Component {
-  render () {
-  return (
-    <React.Fragment>
-       <div className = "jumbotron jumbotron-fluid text-center"
-         style = {{
-          backgroundImage: 'url()',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          height: '200px'
-        }}><h1
-        style = {{
-          color: "white",
-          fontWeight: "bold"
-        }}>Contact Me</h1>
-        </div>
-    </React.Fragment>
-  )
-}
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '',
+      email: '',
+      message: '',
+    };
+    this.updateField = this.updateField.bind(this);
+  }
+  updateField(field, value) {
+    this.setState({ [field]: value });
+  }
+
+  render() {
+    return (
+      <div>
+        <Field 
+          label = 'Name'
+          onChange = {(event) =>  this.updateField('name', event.target.value)}
+         
+          value = {this.state.name} />
+
+        <Field 
+          label = 'Email'
+          onChange = {(event) => this.updateField('email', event.target.value)} 
+          value = {this.state.email} />
+
+        <Field 
+          label = 'Message'
+          onChange = {(event) => this.updateField('message', event.target.value)} 
+          textarea ={true}
+          value = {this.state.message} />
+
+        <Button 
+          email = 'mrubenstein6192@gmail.com' />
+          formValues = {this.state} 
+      </div>
+    )
+  }
 }
 
 export default Contacts;

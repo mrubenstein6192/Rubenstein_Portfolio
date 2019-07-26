@@ -4,8 +4,8 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import AboutMe from "./pages/AboutMe";
 import Navbar from "./components/navbar";
-import Contact from './pages/Contact';
-
+import Contacts from './pages/Contact';
+// import axios from 'axios';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Route exact path = "/home" component = {Home} />
         <Route exact path = "/AboutMe" component = {AboutMe} />
         <Route exact path = "/Projects" component = {Projects} />
-        <Route exact path = "/Contact" component = {Contact} />
+        <Route exact path = "/Contact" component = {Contacts} />
         
         <Route render = {() => <h2>404 page!</h2>} />
       </Switch>

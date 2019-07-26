@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 
-import Col from "../components/Col";
-import Row from "../components/Row";
+// import Col from "../components/Col";
+// import Row from "../components/Row";
 
 class AboutMe extends Component {
   render () {
