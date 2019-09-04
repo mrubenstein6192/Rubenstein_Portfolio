@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types'
 
 const Field = (props) => (
   <div>
@@ -15,7 +16,7 @@ Field.propTypes = {
   label: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired, 
   value: PropTypes.string.isRequired,
-  textarea: PropTypes.bool.isRequired,
+  textarea: PropTypes.bool.isRequired
 };
 
 Field.defaultProps = {

@@ -1,7 +1,8 @@
 import React from 'react';
 
-function Contacts() {
+function Contact() {
   return (
+    <footer>
       <div className="container">
         <div className="row">
           <div className="col-md-6 col-md-offset-3">
@@ -41,8 +42,8 @@ function Contacts() {
           </div>
         </div>
       </div>
-    
+    </footer>
   )
 }
 
-export default Contacts;
+export default Contact;

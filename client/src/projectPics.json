@@ -1,57 +1,63 @@
 [
   {
     "id": 1,
+    "name": "Long Division",
+    "image": "images/app.png",
+    "link": "https://mrubenstein6192.github.io/Long_Division/"
+  },
+  {
+    "id": 2,
+    "name": "Factoring",
+    "image": "images/factoring.png",
+    "link": "https://mrubenstein6192.github.io/factoring/"
+  },
+  {
+    "id": 3,
     "name": "Comic Book Finder",
     "image": "images/comic-book.jpg",
     "link": "https://kmahone19.github.io/Comic-Book-Finder/"
   },
   {
-    "id": 2,
+    "id": 4,
     "name": "Avengers Clicky Game",
     "image": "images/avengers.jpg",
     "link": "https://mrubenstein6192.github.io/avengers-clicky-game/"
   },
   {
-    "id": 3,
+    "id": 5,
     "name": "Travel Buddy",
     "image": "images/travel-buddy.png",
     "link": "https://p2-travel-buddy.herokuapp.com/"
   },
   {
-    "id": 4,
+    "id": 6,
     "name": "Animal GIFs",
     "image": "images/animal-gifs.png",
     "link": "https://mrubenstein6192.github.io/Giphy_API/"
   },
   {
-    "id": 5,
+    "id": 7,
     "name": "Psychic Game",
     "image": "images/psychic-game.png",
     "link": "https://mrubenstein6192.github.io/Psychic_Game/"
   },
   {
-    "id": 6,
+    "id": 8,
     "name": "Game of Thrones Trivia",
     "image": "images/trivia.png",
     "link": "https://mrubenstein6192.github.io/TriviaGame/"
   },
   {
-    "id": 7,
+    "id": 9,
     "name": "Crystal Collector",
     "image": "images/crystals.png",
     "link": "https://mrubenstein6192.github.io/Crystal_Collector_Game/"
   },
   {
-    "id": 8,
+    "id": 10,
     "name": "Eat-Da-Burger",
     "image": "images/burgers.png",
     "link": "https://rubenstein-eat-da-burger.herokuapp.com/"
-  },
-  {
-    "id": 9,
-    "name": "",
-    "image": "",
-    "link": ""
   }
  
 ]
