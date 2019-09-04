@@ -15,12 +15,15 @@ class Projects extends Component {
   return (
     <React.Fragment>
       
-       <div className = "jumbotron jumbotron-fluid text-center"
+       <div className = "jumbotron my-2 jumbotron-fluid text-center"
          style = {{
           backgroundImage: 'url(https://png.pngtree.com/thumb_back/fh260/back_pic/00/12/49/46563df08860442.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          height: '200px'
+          height: '100%',
+          borderStyle: "ridge",
+          borderColor: "darkRed",
+          borderWidth: "5px"
         }}><h1
         style = {{
           color: "maroon",
@@ -30,14 +33,16 @@ class Projects extends Component {
         </div>
 
         <div className="container-fluid">
-          <div className="row align-items-center justify-content-between">
+          <div className="row align-items-center mt-3">
             {/* print out cards here */}
             {this.state.cardData.map(card => {
               return (
                 <div className="col-6 col-sm-4 col-md-3" key={card.id}>
                    <h5 
                    style = {{
-                     textAlign: "center"
+                     textAlign: "center",
+                     color: "white"
+                     
                    }}>{card.name}</h5>
                    <a href = {card.link}
                    target = "_blank"> 

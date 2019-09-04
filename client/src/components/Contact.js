@@ -1,6 +1,6 @@
 import React from "react";
 import "../pages/Contact.css"
-import "./background.css"
+// import "./background.css"
 const ContactForm = () => {
   return (
   <div className = 'container-fluid bg'>

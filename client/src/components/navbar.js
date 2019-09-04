@@ -1,43 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "../pages/About.css"
+import { Navbar, Nav } from 'react-bootstrap';
 
-const Navbar = () => {
+const MyNavbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <Link className="navbar-brand" to="/">
+    <Navbar expand = "lg" className="navbar navbar-expand-sm navbar-dark"
+    style = {{
+      backgroundColor: "maroon"
+    }}>
+       <Link className="navbar-brand" to="/">
         Home
       </Link>
-      <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav ml-auto">
-          <li className="nav-item">
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav" className = "justify-content-end">
+        <Nav>
             <Link className="nav-link text-light mx-2" to="/AboutMe">
               About Me
             </Link>
-          </li>
-          {/* <li className="nav-item">
-            <Link className="nav-link text-light mx-2" to="/AddHike">
-              Add a Hike
-            </Link>
-          </li> */}
-          <li className="nav-item">
             <Link className="nav-link text-light mx-2" to="/Projects">
               Projects
             </Link>
-          </li>
-          {/* <li className="nav-item">
-            <Link className="nav-link text-light mx-2" to="/PlanHike">
-              Plan a Hike
-            </Link>
-          </li> */}
-          <li className="nav-item">
             <Link className="nav-link text-light mx-2" to="/Contact">
               Contact Me
             </Link>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default MyNavbar;
