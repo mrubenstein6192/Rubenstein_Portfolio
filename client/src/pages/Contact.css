@@ -1,9 +1,25 @@
+
 * {
     box-sizing: border-box;
+    
 }
  .Contacts {
      max-width: 420px;
      margin: 0 auto;
+    
+}
+
+.card-header {
+    background-color: lightblue;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.card {
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    box-shadow: 4px 4px darkgrey;
 }
  p {
      text-align: center;
@@ -20,7 +36,7 @@
      resize: vertical;
 }
  input[type=submit] {
-     background-color: #4CAF50;
+     background-color: blue;
      color: white;
      padding: 12px 20px;
      border: none;
@@ -28,7 +44,7 @@
      cursor: pointer;
 }
  input[type=submit]:hover {
-     background-color: #45a049;
+     background-color: green;
 }
  .container {
      border-radius: 5px;
