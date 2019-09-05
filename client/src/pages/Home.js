@@ -19,7 +19,7 @@ class Home extends Component {
             <img src = 'images/profilePic.jpg' alt = "Profile Pic"
              
              style = {{
-              height: "60%",
+              height: "75%",
               borderRadius: "50%"
             }}
             />

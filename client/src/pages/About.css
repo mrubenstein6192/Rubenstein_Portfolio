@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Play|Titillium+Web&display=swap');
 h1 {
   font-family: "Titillium Web", sans-serif;
   text-shadow: 2px 2px darkgoldenrod;
@@ -22,7 +23,9 @@ h3 {
 body {
   background-image: url("https://wallpaperplay.com/walls/full/2/5/0/200799.jpg");
 }
-
+p {
+  font-family: 'Play', sans-serif;
+}
 .effect {
   position: relative; 
   max-width: 100%; /* Maximum width */
@@ -44,3 +47,4 @@ img {
   width: 100%; /* Full width */
   padding: 20px; /* Some padding */
 }
+
