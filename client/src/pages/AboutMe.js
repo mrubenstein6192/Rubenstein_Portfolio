@@ -23,7 +23,8 @@ class AboutMe extends Component {
         }}>
          <p>Hello, my name is Michael Rubenstein.  After teaching for four years, I decided it was time to make a change and discovered the world of coding.</p>
          <p>Upon completion of the Rutgers Coding BootCamp, I joined their instructional team as a Teacher Assistant, combining my two skillsets.</p>
-         <p>A few of my hobbies include hiking, sports, science fiction, and traveling.</p>  
+         <p>A few of my hobbies include hiking, sports, science fiction, and traveling.</p> 
+         <p>Please reach out to me for more information!</p> 
         </div>
       </div>
         <div className = "row my-3">
@@ -55,14 +56,7 @@ class AboutMe extends Component {
         </div>
       </div>
 
-      <div className = "row my-3">
-        <div className = "col-12 mx-auto"
-         style = {{
-          textAlign: "center"
-        }}>
-         resume will go here
-        </div>
-      </div>
+     
 
        <div className = "row"
          style = {{
@@ -76,7 +70,7 @@ class AboutMe extends Component {
          <ul style = {{
            fontSize: "20px",
            textAlign: "start",
-           lineHeight: "2"
+           lineHeight: "2.2"
          }}>
            <li>
              TCNJ Class of 2014 - BA in Math and Secondary Ed
