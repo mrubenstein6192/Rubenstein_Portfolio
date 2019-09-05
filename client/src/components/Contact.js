@@ -47,6 +47,7 @@ const ContactForm = () => {
             <div className="form-group">
               <input className="btn btn-primary" type="submit" value="Send" />
             </div>
+            <input type="hidden" name="_next" value="https://rubenstein-portfolio.herokuapp.com/" />
           </form>
         </div>
       </div>
