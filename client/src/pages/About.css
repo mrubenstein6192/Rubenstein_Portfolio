@@ -1,3 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+h1 {
+  font-family: "Titillium Web", sans-serif;
+  text-shadow: 2px 2px darkgoldenrod;
+  letter-spacing: 2px;
+  color: white;
+ 
+}
+h2 {
+  text-shadow: 2px 2px darkblue;
+  letter-spacing: 1px;
+  color: lightgrey;
+  
+}
+h3 {
+  text-shadow: 2px 2px red;
+  letter-spacing: 1px;
+  color: white;
+  font-size: 40px;
+}
 body {
   background-image: url("https://wallpaperplay.com/walls/full/2/5/0/200799.jpg");
+}
+
+.effect {
+  position: relative; 
+  max-width: 100%; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+img {
+      justify-content: center;
+
+    }
+
+.effect .content {
+  
+  position: absolute; /* Position the background text */
+  top: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.7); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
 }

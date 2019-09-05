@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import picData from '../languagePics.json'
+import "./About.css"
 
 class Home extends Component {
   state = {
@@ -8,56 +9,44 @@ class Home extends Component {
   render () {
     return(
     <React.Fragment>
-      <div className = "jumbotron jumbotron-fluid text-center"
-        style = {{
-          // backgroundImage: 'url()',
-          // backgroundSize: 'cover',
-          // backgroundPosition: 'center',
-          height: '300px'
-         
-        }}>
+      <div className="container effect">
+      <img src="https://wallpaperbro.com/img/462470.jpg" style = {{
+        width: "100%"
+    }}/>
+      <div className = "content">
           <div className = "row">
-          <div className = "col-lg-3 mx-auto">
+          <div className = "col-lg-2 mx-auto bg-text">
             <img src = 'images/profilePic.jpg' alt = "Profile Pic"
              
              style = {{
-              height: "50%",
+              height: "60%",
               borderRadius: "50%"
             }}
             />
           </div>
-          <div className = "col-lg-9">
-            <h1 className = "display-3"
-              style = {{
-                fontWeight: 'bold',
-                color: 'black'
-                }}>
+          <div className = "col-lg-8 bg-text">
+            <h1 className = "display-3">
                   Michael Rubenstein</h1>
-                <h2 className = "display-4"
-                    style = {{
-                    color: "darkGrey"
-                    }}>
+                <h2 className = "display-4">
                   Full-Stack Web Developer</h2>
+                  <h3>
+                    Rutgers Coding BootCamp
+                  </h3>
           </div>
-          
-          
-        </div>
-        </div>
-          
           <div className="container">
           <div className="row justify-content-center mt-1">
             {/* print out cards here */}
             {this.state.picData.map(card => {
               return (
-                <div className="col-lg-2 col-sm-4 col-md-3" key={card.id}>
+                <div className="col-lg-1 col-sm-4 col-md-3" key={card.id}>
                   
                   <img
                     src={card.image}
                     alt={card.name}
                     className="img-fluid img-thumbnail rounded mb-4"
                     style = {{
-                      height: "125px",
-                      width: "75%"
+                      height: "75px",
+                      width: "100%"
                     }}
                   />
              
@@ -66,6 +55,12 @@ class Home extends Component {
             })}
           </div>
         </div>
+          </div>
+         
+        </div>
+        </div>
+          
+         
         
     
     </React.Fragment>
