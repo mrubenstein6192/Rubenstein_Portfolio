@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import cardData from "../projectPics.json";
 
-// import { Link } from 'react-router-dom';
-
-
-// import Col from "../components/Col";
-// import Row from "../components/Row";
 
 class Projects extends Component {
   state = {
