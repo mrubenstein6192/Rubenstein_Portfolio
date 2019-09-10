@@ -9,11 +9,12 @@ const ContactForm = () => {
       <div className="contact-card card shadow mt-4 mb-5">
         <div className="card-header text-center">Send Me a Message</div>
         <div className="card-body">
-          <form
+          <form id = "form" className = "form"
             action="https://formspree.io/mrubenstein6192@gmail.com"
             method="POST"
           >
-            <div className="form-group">
+           <ul>
+             <li>
               <label htmlFor="name">Your Name</label>
               <input
                 className="form-control"
@@ -21,19 +22,19 @@ const ContactForm = () => {
                 placeholder="Name"
                 name="name"
               />
-              
-            </div>
-            <label htmlFor="email">Your Email</label>
-            <div className="form-group">
+              </li>
+              <li>
+              <label htmlFor="email">Your Email</label>
+           
               <input
                 className="form-control"
                 type="email"
                 placeholder="your_email@email.com"
                 name="_replyto"
               />
-             
-            </div>
-            <div className="form-group">
+              </li>
+            
+              <li>
               <label htmlFor="exampleFormControlTextarea1">Message</label>
               <textarea
                 placeholder="Write message here."
@@ -43,11 +44,13 @@ const ContactForm = () => {
                 rows="3"
                 name="message"
               />
-            </div>
-            <div className="form-group">
-              <input className="btn btn-primary" type="submit" value="Send" />
-            </div>
-            <input type="hidden" name="_next" value="https://rubenstein-portfolio.herokuapp.com/" />
+              </li>
+          </ul>
+           
+              <input type="submit" value="Send" />
+              <input type="hidden" name="_next" value="../../public/thankyou.html" />
+           
+           
           </form>
         </div>
       </div>

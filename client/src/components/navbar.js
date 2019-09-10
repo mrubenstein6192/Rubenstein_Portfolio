@@ -21,9 +21,9 @@ const MyNavbar = () => {
             <Link className="nav-link text-light mx-2" to="/Projects">
               Projects
             </Link>
-            <Link className="nav-link text-light mx-2" to="/Contact">
+            {/* <Link className="nav-link text-light mx-2" to="/Contact">
               Contact Me
-            </Link>
+            </Link> */}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
